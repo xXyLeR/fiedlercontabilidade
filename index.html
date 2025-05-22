@@ -35,12 +35,12 @@
 
 .navbar {
   background-color: rgb(88, 6, 6);
-  position: relative; /* Precisamos disso para posicionar o Instagram absolutamente */
+  position: relative; 
 }
 
 .navbar {
   background-color: rgb(88, 6, 6);
-  position: relative; /* Precisamos disso para posicionar o Instagram absolutamente */
+  position: relative; 
 }
 
 .navbar-brand {
@@ -180,63 +180,83 @@
       background-color: rgb(88, 6, 6);
     }
 
-    /* Responsividade */
+   /* Responsividade para dispositivos móveis */
 @media (max-width: 767px) {
-  /* Ajustes para telas pequenas (como celular) */
-  
+  /* Ajustes para o cabeçalho */
+  .navbar {
+    padding: 10px 0; /* Ajusta o padding da navbar */
+    text-align: center; /* Centraliza os elementos */
+  }
+
   .navbar-brand {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .navbar-brand img {
-    height: 40px; /* Ajusta o tamanho da logo para dispositivos móveis */
-    margin-bottom: 10px; /* Adiciona espaço abaixo da logo */
+    height: 50px; /* Ajusta o tamanho da logo no celular */
+    margin-bottom: 10px; /* Deixa o espaço entre a logo e o nome */
   }
 
+  .navbar-brand span {
+    font-size: 1.5rem; /* Ajusta o tamanho do texto no celular */
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Ajuste no slogan */
   .slogan {
-    font-size: 1.2rem; /* Ajusta o tamanho da fonte do slogan */
+    font-size: 1rem; /* Ajusta o tamanho da fonte do slogan */
     line-height: 1.4;
-    margin-bottom: 15px; /* Adiciona espaço abaixo do slogan */
+    margin-bottom: 15px; /* Espaço abaixo do slogan */
+    text-align: center; /* Centraliza o slogan */
+    color: white;
   }
 
+  /* Ajuste do ícone do Instagram */
   .instagram-link {
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
   }
 
-  /* Ajustando o tamanho do ícone no celular */
   .navbar .bi-instagram {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  /* Ajustes para telas maiores (como tablets e desktop) */
-  
-  .navbar-brand {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    font-size: 1.8rem; /* Ajuste do tamanho do ícone do Instagram */
+    color: white;
   }
 
-  .navbar-brand img {
-    height: 60px; /* Tamanho maior da logo em telas grandes */
+  /* Ajustes no conteúdo da página */
+  section {
+    padding: 15px; /* Diminui o padding das seções em dispositivos móveis */
   }
 
-  .slogan {
-    font-size: 1.5rem; /* Slogan maior em telas grandes */
-    margin-bottom: 20px;
+  .card {
+    margin-bottom: 15px; /* Ajusta o espaçamento entre os cards */
   }
 
-  .instagram-link {
-    position: static;
-    transform: none;
+  /* Ajustes no rodapé */
+  .footer p {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte no rodapé */
   }
-}
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 24px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px; /* Ajusta o tamanho do botão em telas menores */
+  }
+
+  .form-control {
+
 
   </style>
 </head>
