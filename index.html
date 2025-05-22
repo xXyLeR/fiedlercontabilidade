@@ -179,6 +179,65 @@
     .btn-primary:hover {
       background-color: rgb(88, 6, 6);
     }
+
+    /* Responsividade */
+@media (max-width: 767px) {
+  /* Ajustes para telas pequenas (como celular) */
+  
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    height: 40px; /* Ajusta o tamanho da logo para dispositivos móveis */
+    margin-bottom: 10px; /* Adiciona espaço abaixo da logo */
+  }
+
+  .slogan {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte do slogan */
+    line-height: 1.4;
+    margin-bottom: 15px; /* Adiciona espaço abaixo do slogan */
+  }
+
+  .instagram-link {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Ajustando o tamanho do ícone no celular */
+  .navbar .bi-instagram {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Ajustes para telas maiores (como tablets e desktop) */
+  
+  .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    height: 60px; /* Tamanho maior da logo em telas grandes */
+  }
+
+  .slogan {
+    font-size: 1.5rem; /* Slogan maior em telas grandes */
+    margin-bottom: 20px;
+  }
+
+  .instagram-link {
+    position: static;
+    transform: none;
+  }
+}
+
   </style>
 </head>
 <body>
