@@ -25,9 +25,105 @@
       background-color:rgb(88, 6, 6);
     }
 
-    .navbar-brand img {
-      height: 40px;
-      margin-right: 10px;
+.navbar {
+  background-color: rgb(88, 6, 6);
+}
+
+.navbar {
+  background-color: rgb(88, 6, 6);
+}
+
+.navbar {
+  background-color: rgb(88, 6, 6);
+  position: relative; /* Precisamos disso para posicionar o Instagram absolutamente */
+}
+
+.navbar {
+  background-color: rgb(88, 6, 6);
+  position: relative; /* Precisamos disso para posicionar o Instagram absolutamente */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  height: 70px;
+  margin-right: 15px;
+}
+
+.navbar-brand span {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.fs-5 {
+  font-size: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.instagram-icon {
+  position: absolute;
+  right: 15px; /* Alinha o ícone do Instagram no canto direito */
+  top: 50%; /* Ajusta a posição para o meio da barra */
+  transform: translateY(-50%); /* Garante que o ícone esteja centralizado verticalmente */
+}
+
+
+
+.text-white {
+  color: white;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.fs-5 {
+  font-size: 1.5rem;
+}
+
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+
     }
 
     .section-title {
@@ -87,29 +183,29 @@
 </head>
 <body>
 
-  <!-- Navbar com logo -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container d-flex flex-column align-items-center">
-      <a class="navbar-brand d-flex align-items-center mb-2" href="#">
-      <img src="logoo.png.jpeg"/>
+<!-- Navbar com logo, nome, slogan e Instagram no canto direito -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container d-flex flex-column align-items-center position-relative">
+    <!-- Logo e nome da empresa -->
+    <a class="navbar-brand d-flex align-items-center mb-2">
+      <img src="logoo.png.jpeg" alt="Logo Fiedler Contabilidade"/>
       <span class="fw-bold text-white">Fiedler Contabilidade</span>
-      </a>
+    </a>
 
-
-    <!-- Slogan centralizado -->
+    <!-- Slogan -->
     <div class="text-white text-center fw-semibold mb-2">
       A contabilidade que sua empresa precisa, gerando segurança e tranquilidade que você merece!
     </div>
 
+    <!-- Ícone do Instagram no canto direito, entre as duas linhas -->
     <a href="https://www.instagram.com/fiedlercontabilidade?igsh=ZXh6MG8zaXlsbHNr" 
        target="_blank" 
-       class="text-white text-decoration-none fs-5">
-      <i class="bi bi-instagram me-2"></i>Instagram
+       class="text-white text-decoration-none fs-5 position-absolute instagram-icon">
+      <i class="bi bi-instagram"></i>
     </a>
   </div>
 </nav>
 
-  
 
   <!-- Sobre nós -->
   <section class="container my-5">
@@ -167,6 +263,7 @@
 <section class="container my-5">
   <h2 class="section-title mb-4"><i class="bi bi-gear-fill"></i> Conheça nossos serviços</h2>
   <div class="row row-cols-1 row-cols-md-2 g-4">
+    <!-- Outros serviços -->
     <div class="col">
       <div class="card p-3">
         <h5><i class="bi bi-check-circle"></i> Assessoria Contábil</h5>
@@ -212,8 +309,15 @@
         <h5><i class="bi bi-person-lines-fill"></i> Recursos Humanos e Departamento pessoal</h5>
       </div>
     </div>
+    <!-- Novo serviço: Certificado Digital -->
+    <div class="col">
+      <div class="card p-3">
+        <h5><i class="bi bi-file-earmark-lock"></i>Certificado Digital emita e renove conosco</h5>
+      </div>
+    </div>
   </div>
 </section>
+
 
 <!-- Por que contratar a Fiedler Contabilidade? -->
 <section class="container my-5">
